@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZapasUrban - Las Mejores Marcas de Zapatillas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header con logo y navegación -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Zapas<span>Naty</span></h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="carrito-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="contador-carrito">0</span>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Panel del carrito (inicialmente oculto) -->
+    <div class="carrito-panel">
+        <div class="carrito-header">
+            <h2>Tu Carrito</h2>
+            <button class="cerrar-carrito"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="carrito-items">
+            <!-- Los items del carrito se agregarán dinámicamente con JavaScript -->
+        </div>
+        <div class="carrito-footer">
+            <div class="total">
+                <p>Total: <span id="carrito-total">S/0.00</span></p>
+            </div>
+            <button class="btn-comprar">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Banner principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Las Mejores Zapatillas Urbanas</h2>
+                <p>Estilo, comodidad y actitud en cada paso</p>
+                <a href="#productos" class="btn-primary">Ver Colección</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="filtro-container">
+                <!-- Los filtros se cargarán dinámicamente con JavaScript -->
+            </div>
+            <div class="marcas-destacadas">
+                <h3>Marcas Destacadas</h3>
+                <div class="marcas-logos">
+                    <div class="marca-logo" data-marca="Nike"><i class="fas fa-check-circle"></i> Nike</div>
+                    <div class="marca-logo" data-marca="Adidas"><i class="fas fa-check-circle"></i> Adidas</div>
+                    <div class="marca-logo" data-marca="Puma"><i class="fas fa-check-circle"></i> Puma</div>
+                    <div class="marca-logo" data-marca="Vans"><i class="fas fa-check-circle"></i> Vans</div>
+                    <div class="marca-logo" data-marca="New Balance"><i class="fas fa-check-circle"></i> New Balance</div>
+                    <div class="marca-logo" data-marca="Converse"><i class="fas fa-check-circle"></i> Converse</div>
+                    <div class="marca-logo" data-marca="Reebok"><i class="fas fa-check-circle"></i> Reebok</div>
+                    <div class="marca-logo" data-marca="Fila"><i class="fas fa-check-circle"></i> Fila</div>
+                </div>
+            </div>
+            
+            <!-- Secciones por marca (inicialmente ocultas) -->
+            <div class="secciones-marca">
+                <div id="marca-Nike" class="seccion-marca">
+                    <h3>Zapatillas Nike</h3>
+                    <div class="productos-marca" data-marca="Nike"></div>
+                </div>
+                <div id="marca-Adidas" class="seccion-marca">
+                    <h3>Zapatillas Adidas</h3>
+                    <div class="productos-marca" data-marca="Adidas"></div>
+                </div>
+                <div id="marca-Puma" class="seccion-marca">
+                    <h3>Zapatillas Puma</h3>
+                    <div class="productos-marca" data-marca="Puma"></div>
+                </div>
+                <div id="marca-Vans" class="seccion-marca">
+                    <h3>Zapatillas Vans</h3>
+                    <div class="productos-marca" data-marca="Vans"></div>
+                </div>
+                <div id="marca-New Balance" class="seccion-marca">
+                    <h3>Zapatillas New Balance</h3>
+                    <div class="productos-marca" data-marca="New Balance"></div>
+                </div>
+                <div id="marca-Converse" class="seccion-marca">
+                    <h3>Zapatillas Converse</h3>
+                    <div class="productos-marca" data-marca="Converse"></div>
+                </div>
+                <div id="marca-Reebok" class="seccion-marca">
+                    <h3>Zapatillas Reebok</h3>
+                    <div class="productos-marca" data-marca="Reebok"></div>
+                </div>
+                <div id="marca-Fila" class="seccion-marca">
+                    <h3>Zapatillas Fila</h3>
+                    <div class="productos-marca" data-marca="Fila"></div>
+                </div>
+            </div>
+            <div class="productos-grid">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contacto-container">
+                <div class="contacto-info">
+                    <h3>Información de Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> av. santa rosa, Los Olivos</p>
+                    <p><i class="fas fa-phone"></i> +51 999 999 999</p>
+                    <p><i class="fas fa-envelope"></i> pradonaty147@.com</p>
+                    <div class="redes-sociales">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contacto-form">
+                    <form id="formulario-contacto">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Zapas<span>Urban</span></h2>
+                    <p>Tu tienda de zapatillas urbanas favorita</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe nuestras novedades y ofertas</p>
+                    <form>
+                        <input type="email" placeholder="Tu email">
+                        <button type="submit">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Zapas Urban. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Overlay para cuando el carrito está abierto -->
+    <div class="overlay"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
